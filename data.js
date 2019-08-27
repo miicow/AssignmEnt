@@ -1,13 +1,13 @@
 const data = {
   fifa: {
     gameLabel: 'FIFA 17',
-    videoLink: 'https://www.youtube.com/watch?v=yYjD78X1d9Q',
+    videoId: 'yYjD78X1d9Q',
     gameIcon:
       'https://Eaassets-a.akamaihd.net/origin-com-store-final-assets-prod/182633/231.0x326.0/1038862_LB_231x326_en_US_^_2016-07-21-10-11-54_1b27093a8723b707c8433a4aafc9203fd660d669.jpg'
   },
   unravel: {
     gameLabel: 'Unravel',
-    videoLink: 'https://www.youtube.com/watch?v=QpnY1G3vt_0',
+    videoId: 'QpnY1G3vt_0',
     gameIcon:
       'https://eaassets-a.akamaihd.net/origin-com-store-final-assets-prod/194331/231.0x326.0/1031469_LB_231x326_en_US_%5E_2015-06-08-12-38-28_34137b019ffbf482edfea4910a792707153fea75.jpg'
   },
