@@ -21,6 +21,8 @@ class SecondPanel extends React.Component {
         <img
           className="bg-image"
           src="https://data2.origin.com/content/dam/originx/web/app/programs/About/aboutorigin_3840x2160_battlefield1.jpg"
+          data-src-600px="image-600px.jpg"
+          data-src-800px="image-800px.jpg"
           alt="Battlefield 1"
         />
         <h2>Great PC games</h2>

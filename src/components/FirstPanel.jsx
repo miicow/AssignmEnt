@@ -22,6 +22,8 @@ class FirstPanel extends React.Component {
         <img
           className="bg-image"
           src="https://data1.origin.com/content/dam/originx/web/app/programs/About/aboutorigin_3840x2160_SWB.jpg"
+          data-src-600px="image-600px.jpg"
+          data-src-800px="image-800px.jpg"
           alt=""
         />
         <h1>

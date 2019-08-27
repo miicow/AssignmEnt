@@ -20,6 +20,8 @@ class ThirdPanel extends React.Component {
         <img
           className="bg-image"
           src="https://data1.origin.com/content/dam/originx/web/app/games/titanfall/titanfall/titanfall-deluxe-edition_pdp_3840x2160_en_WW.jpg"
+          data-src-600px="image-600px.jpg"
+          data-src-800px="image-800px.jpg"
           alt="Titanfall 2"
         />
         <h2>What are you waiting for?</h2>

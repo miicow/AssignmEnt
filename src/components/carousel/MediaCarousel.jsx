@@ -46,14 +46,14 @@ class MediaCarousel extends React.Component {
           ref={slider => (this.slider1 = slider)}
           {...settings}
         >
-          <div className={unravel.gameLabel}>
+          <div className="video-container">
             <iframe
               src={`https://youtube.com/embed/${unravel.videoId}`}
               frameBorder="0"
               className="youtube-video"
             ></iframe>
           </div>
-          <div className={fifa.gameLabel}>
+          <div className="video-container">
             <iframe
               src={`https://youtube.com/embed/${fifa.videoId}`}
               frameBorder="0"
