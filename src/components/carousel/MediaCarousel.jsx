@@ -1,5 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
+import '../../css/style.css';
 
 class MediaCarousel extends React.Component {
   constructor(props) {
@@ -18,6 +19,7 @@ class MediaCarousel extends React.Component {
   }
 
   render() {
+    const { fifa, unravel } = this.props.gameData;
     const settings = {
       fade: true,
       infinite: true,
@@ -25,7 +27,17 @@ class MediaCarousel extends React.Component {
       autoplay: true,
       autoplaySpeed: 10000,
       slidesToShow: 1,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      className: 'videoPlayer'
+    };
+
+    const settings2 = {
+      slidesToShow: 3,
+      swipeToSlide: true,
+      focusOnSelect: true,
+      fade: true,
+      className: 'thumbnail',
+      arrows: false
     };
     return (
       <React.Fragment>
@@ -34,44 +46,40 @@ class MediaCarousel extends React.Component {
           ref={slider => (this.slider1 = slider)}
           {...settings}
         >
-          <div>
+          <div className={unravel.gameLabel}>
             <iframe
-              src="https://youtube.com/embed/QpnY1G3vt_0"
-              frameborder="0"
-              height="520"
-              width="980"
+              src={`https://youtube.com/embed/${unravel.videoId}`}
+              frameBorder="0"
+              className="youtube-video"
             ></iframe>
           </div>
-          <div>
+          <div className={fifa.gameLabel}>
             <iframe
-              src="https://youtube.com/embed/yYjD78X1d9Q"
-              frameborder="0"
-              height="520"
-              width="980"
+              src={`https://youtube.com/embed/${fifa.videoId}`}
+              frameBorder="0"
+              className="youtube-video"
             ></iframe>
           </div>
         </Slider>
         <Slider
           asNavFor={this.state.nav1}
           ref={slider => (this.slider2 = slider)}
-          slidesToShow={3}
-          swipeToSlide={true}
-          focusOnSelect={true}
-          fade={true}
-          dots={true}
+          {...settings2}
         >
           <div>
             <img
-              src="https://eaassets-a.akamaihd.net/origin-com-store-final-assets-prod/194331/231.0x326.0/1031469_LB_231x326_en_US_%5E_2015-06-08-12-38-28_34137b019ffbf482edfea4910a792707153fea75.jpg"
-              alt=""
+              className="thumbnail-icon"
+              src={unravel.gameIcon}
+              alt={unravel.gameLabel}
               width="48"
               height="68"
             />
           </div>
           <div>
             <img
-              src="https://eaassets-a.akamaihd.net/origin-com-store-final-assets-prod/182633/231.0x326.0/1038862_LB_231x326_en_US_%5E_2016-07-21-10-11-54_1b27093a8723b707c8433a4aafc9203fd660d669.jpg"
-              alt=""
+              className="thumbnail-icon"
+              src={fifa.gameIcon}
+              alt={fifa.gameLabel}
               width="48"
               height="68"
             />
