@@ -1,5 +1,8 @@
 import React from 'react';
 import FirstPanel from './FirstPanel.jsx';
+import SecondPanel from './SecondPanel.jsx';
+import ThirdPanel from './ThirdPanel.jsx';
+import '../css/style.css';
 
 class AppContainer extends React.Component {
   render() {

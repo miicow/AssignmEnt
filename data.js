@@ -1,4 +1,4 @@
-const gameData = {
+const data = {
   fifa: {
     gameLabel: 'FIFA 17',
     videoLink: 'https://www.youtube.com/watch?v=yYjD78X1d9Q',
@@ -24,7 +24,25 @@ const gameData = {
       'https://data1.origin.com/content/dam/originx/web/app/games/titanfall/titanfall/titanfall-deluxe-edition_pdp_3840x2160_en_WW.jpg',
     gameIcon:
       'https://eaassets-a.akamaihd.net/origin-com-store-final-assets-prod/192492/231.0x326.0/1039096_LB_231x326_en_US_%5E_2016-05-06-05-17-52_63c62ad76b294c6dc44ea97fc0561b22fdc7c1c1.jpg'
+  },
+  battlefield: {
+    gameLabel: 'Battlefield 1',
+    backgroundImage:
+      'https://data2.origin.com/content/dam/originx/web/app/programs/About/aboutorigin_3840x2160_battlefield1.jpg',
+    gameIcon:
+      'https://originassets.akamaized.net/origin-com-store-final-assets-prod/190132/231.0x326.0/1026023_LB_231x326_en_US_%5E_2016-05-11-02-18-28_bb5bfaf422670d9addea7e8e790f09716120d7be.png'
+  },
+  anchorNavigationData = {
+    greatPCGames :{
+      displayText: 'Great PC Games',
+      anchorId: 'greatpcgames'
+    },
+    downloadNow: {
+      displayText: 'Download Now',
+      anchorId: 'downloadnow'
+    }
   }
 };
 
-export default gameData;
+
+export default data;
